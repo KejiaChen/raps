@@ -61,6 +61,13 @@ conda activate raps
 ```
 Please ignore any requirements conflicts, the code will work regardless.
 
+You may need to comment out following lines in `/home/tp2/anaconda3/envs/raps/lib/python3.7/site-packages/dm_control/mujoco/wrapper/mjbindings/sizes.py` if an error of `MjData` is reported.
+```
+# 'qacc_unc': ('nv',),
+# 'qfrc_unc': ('nv',),
+```
+The error might come from a version conflicts between MuJoCo and the corresponding pip package. Even though we set MuJoCo version to mujoco200 during installation, it is still written ` MuJoCo header version: 212` in the auto-generated `sizes.py`.
+
 ## Training and Evaluation
 
 ### Kitchen

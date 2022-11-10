@@ -17,6 +17,8 @@ from robosuite.utils.mjcf_utils import IMAGE_CONVENTION_MAPPING
 from robosuite.utils.mujoco_py_renderer import MujocoPyRenderer
 from robosuite.utils.observables import sensor
 
+import copy
+
 
 def patch_mjlib_accessors(mjlib, model, data):
     """Adds accessors to the DM Control objects to support mujoco_py API.

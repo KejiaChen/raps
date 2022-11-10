@@ -10,7 +10,7 @@ from torch.distributions.independent import Independent
 from torch.distributions.normal import Normal
 from torch.nn import init
 from torch.nn.parameter import Parameter
-from torch.tensor import Tensor
+from torch import Tensor
 
 import rlkit.torch.pytorch_util as ptu
 from rlkit.torch.core import PyTorchModule
